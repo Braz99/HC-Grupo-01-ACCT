@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
+
+//progress circle wraper
 import { makeStyles } from "@material-ui/core/styles";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
+//font awesome icons
+import '../../assets/icons/fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// make circle styles
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -12,9 +19,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ProgressWraper() {
+  // set scroll top
   const [scrollTop, setScrollTop] = useState(0);
   const classes = useStyles();
 
+  // get scroll location and transform in percent
   const onScroll = () => {
     const windowScroll = document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -23,6 +32,7 @@ function ProgressWraper() {
     setScrollTop(scrolled);
   };
 
+  // add and remove events
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
 
@@ -46,9 +56,20 @@ function ProgressWraper() {
             width: "45px",
             height: "45px",
             color: "#fcc200",
+            zIndex: 99998
           }}
         />
-        <h3 style={{ color: "white", zIndex: 99999, position: "fixed", bottom: 93, right: 117 }}>$</h3>
+        <div style={{
+          color: "white",
+          zIndex: 99999,
+          position: "fixed",
+          bottom: 114,
+          right: 117
+        }}>
+          <a href="#" style={{ scrollBehavior: "smooth" }}>
+            <FontAwesomeIcon icon="angle-double-up" style={{ color: "#fcc200" }} />
+          </a>
+        </div>
       </div>
     </div>
   );

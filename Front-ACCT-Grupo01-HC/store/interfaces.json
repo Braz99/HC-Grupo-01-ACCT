@@ -1,14 +1,17 @@
 {
-    "countdown": {
-      "component": "Countdown"
-    },
-    "title": {
-      "component": "Title"
-    },
-    "h1test": {
-      "component": "ComponentH1test"
-    },
     "progress-wraper": {
       "component": "ComponentProgressWraper"
+    },
+    "mapa-slide": {
+      "component": "ComponentMapaSlide"
+    },
+    "computer-slide": {
+      "component": "ComponentComputerSlide"
+    },
+    "contact-form": {
+      "component": "ComponentContactForm"
+    },
+    "contact-form-separated": {
+      "component": "ComponentFormSeparated"
     }
 }
