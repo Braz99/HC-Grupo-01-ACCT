@@ -1,6 +1,7 @@
 {
     "store.custom#experience-design": {
         "blocks": [
+            "progress-wraper",
             "flex-layout.row#header-experience-design",
             "flex-layout.row#block-o-que-e-experience-design",
             "flex-layout.row#block-profissional-ux-ui",
@@ -14,7 +15,8 @@
             "flex-layout.row#block-styleguide",
             "flex-layout.row#block-analise-heatmaps",
             "flex-layout.row#block-cards-metricas-kpis",
-            "flex-layout.row#block-citacao"
+            "flex-layout.row#block-citacao",
+            "contact-form"
         ]
     }
 }

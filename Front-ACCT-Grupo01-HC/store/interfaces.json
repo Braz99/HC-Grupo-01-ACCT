@@ -2,16 +2,30 @@
     "progress-wraper": {
       "component": "ComponentProgressWraper"
     },
-    "mapa-slide": {
-      "component": "ComponentMapaSlide"
+
+    "perspective-animation-image": {
+      "component": "ComponentPerspectiveAnimationImageSlider",
+      "composition": "children",
+      "allowed": "*"
     },
+
     "computer-slide": {
       "component": "ComponentComputerSlide"
     },
+
     "contact-form": {
-      "component": "ComponentContactForm"
+      "component": "JSComponentContactForm"
     },
+
     "contact-form-separated": {
       "component": "ComponentFormSeparated"
+    }, 
+    
+    "lead-form": {
+      "component": "JSComponentLeadForm"
+    },
+
+    "lead-list": {
+      "component": "JSComponentLeadList"
     }
 }
